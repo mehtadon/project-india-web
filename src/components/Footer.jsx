@@ -42,7 +42,7 @@ export default function Footer() {
           ))}
         </div>
         <p className="text-sm text-gray-400 dark:text-gray-500">
-          Project India — an open, community-driven initiative.
+          Project India — citizen-driven democracy, one ward at a time.
         </p>
       </div>
     </footer>

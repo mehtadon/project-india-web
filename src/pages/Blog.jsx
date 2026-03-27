@@ -8,7 +8,7 @@ export default function Blog() {
     <PageContainer>
       <PageHeader
         title="Blog"
-        subtitle="Ideas, reflections, and practical guides on ward-level democracy."
+        subtitle="Ideas, practical guides, and the vision behind ward-level citizen associations."
       />
 
       <div className="space-y-12">

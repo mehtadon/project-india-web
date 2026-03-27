@@ -7,11 +7,12 @@ export default function Join() {
   return (
     <PageContainer>
       <h1 className="mb-4 text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
-        Join the Initiative
+        Join the Movement
       </h1>
       <p className="mb-8 text-lg leading-relaxed text-gray-600 dark:text-gray-400">
-        Project India is not an organisation. It's a community-driven idea —
-        open to anyone who believes that local democracy can be better.
+        Project India is not an organisation — it's a citizen-driven movement.
+        If you believe India's democracy should work from the ground up, and
+        that real change starts in your own ward, you belong here.
       </p>
 
       <section className="mb-12">
@@ -19,13 +20,17 @@ export default function Join() {
           How It Works
         </h2>
         <p className="mb-4 leading-relaxed text-gray-600 dark:text-gray-400">
-          There's no sign-up form or membership. We gather on Reddit to discuss
-          ideas, share experiences from our wards, and figure out practical ways
-          to improve local governance.
+          We are building ward-level citizen associations — groups of everyday
+          people in each ward who come together, discuss their neighbourhood's
+          problems, and create a one-year plan for how their ward should look.
+          That plan gets proposed to the ward councillor, and citizens hold them
+          accountable for delivering on it.
         </p>
         <p className="leading-relaxed text-gray-600 dark:text-gray-400">
-          Whether you've been attending ward meetings for years or are just
-          curious about what your councillor does — you're welcome.
+          Whether you're a homemaker, a retired professional, a student, or a
+          senior citizen — if you have some time and care about where you live,
+          you can be part of this. No political affiliation needed. Just a
+          willingness to show up and participate.
         </p>
       </section>
 
@@ -34,17 +39,18 @@ export default function Join() {
           What You Can Do
         </h2>
         <ul className="list-disc space-y-2 pl-6 text-gray-600 dark:text-gray-400">
-          <li>Share what's happening in your ward</li>
-          <li>Ask questions and challenge ideas</li>
-          <li>Help document ward-level governance processes</li>
-          <li>Write about your experience for the blog</li>
-          <li>Simply listen and learn</li>
+          <li>Start or join a ward association in your neighbourhood</li>
+          <li>Attend ward meetings and hold representatives accountable</li>
+          <li>Help draft a one-year plan for your ward's development</li>
+          <li>Oversee infrastructure work — question what's being dug up and why</li>
+          <li>Document everything and share it publicly on YouTube</li>
+          <li>Discuss ideas and share your ward's story in our community</li>
         </ul>
       </section>
 
       <CalloutSection
-        title="Ready to Join?"
-        description="All discussions happen on our Reddit community. Drop in, say hello, and share your ward's story."
+        title="Ready to Start?"
+        description="Join the conversation. Share your ward's story. Help us build the first case study that the rest of India — and the world — can follow."
       >
         <Button href={REDDIT_URL}>Join on Reddit</Button>
       </CalloutSection>

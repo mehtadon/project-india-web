@@ -12,8 +12,9 @@ export default function Home() {
           Project India
         </h1>
         <p className="text-lg leading-relaxed text-gray-600 dark:text-gray-400">
-          An open initiative to improve democracy at the ward level — one
-          neighbourhood at a time.
+          Making India a place where we would want our children to feel safe,
+          live with pride, and experience real democracy — starting from the
+          ward level.
         </p>
       </section>
 
@@ -21,38 +22,44 @@ export default function Home() {
       <section className="mb-16">
         <h2 className="mb-4 text-2xl font-semibold text-gray-900 dark:text-gray-100">The Idea</h2>
         <p className="mb-4 leading-relaxed text-gray-600 dark:text-gray-400">
-          India's democracy is vibrant at the national level but often invisible
-          where it matters most — in your ward. The councillor who decides your
-          roads, water, and sanitation is someone most citizens can't even name.
+          Why can't every ward in India have its own citizen association? There
+          are millions of people — women, retired professionals, students, senior
+          citizens — who have time, energy, and a stake in their neighbourhood.
+          What if they came together?
         </p>
         <p className="leading-relaxed text-gray-600 dark:text-gray-400">
-          We believe that if a small group of engaged citizens in every ward
-          started paying attention — attending meetings, tracking budgets, asking
-          questions — it would transform local governance from the ground up.
+          The idea is simple: citizens in a ward gather, discuss how their ward
+          should look in the next one year, create a concrete plan, and push
+          their ward councillor, MLA, or MP to make it happen. When citizens
+          start demanding the right things, the vote bank shifts. The government
+          no longer has to rely on freebies — because people are asking for
+          accountability instead.
         </p>
       </section>
 
-      {/* Philosophy */}
+      {/* The Vision */}
       <section className="mb-16">
         <h2 className="mb-4 text-2xl font-semibold text-gray-900 dark:text-gray-100">
-          Thinking in Public
+          The Vision
         </h2>
         <p className="mb-4 leading-relaxed text-gray-600 dark:text-gray-400">
-          We don't have all the answers. Nobody does. This project is an
-          experiment in thinking out loud — sharing rough ideas, inviting
-          disagreement, and improving through honest conversation.
+          Over time, ward associations can become self-sustaining. Each ward
+          forms a trust. The trust generates revenue — screens in the ward for
+          local advertisements, community spaces, local partnerships. The trust
+          plants and maintains trees, oversees infrastructure, and holds the
+          system accountable.
         </p>
         <p className="leading-relaxed text-gray-600 dark:text-gray-400">
-          There are no perfect plans here. Just a belief that citizens who
-          organise at the smallest level of democracy can create change that
-          scales.
+          We start with one ward. We do it right. We record everything and put
+          it on YouTube. That one ward becomes a case study — not just for India,
+          but for the world. Then the next ward picks it up. And the next.
         </p>
       </section>
 
       {/* CTA */}
       <CalloutSection
-        title="Join the Conversation"
-        description="We discuss ideas, share ward-level experiences, and figure things out together on Reddit."
+        title="Join the Movement"
+        description="We're building this in the open — discussing ideas, sharing progress, and figuring things out together."
       >
         <Button href={REDDIT_URL}>Join on Reddit</Button>
         <span className="mx-3 text-gray-400 dark:text-gray-600">or</span>
