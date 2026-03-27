@@ -42,8 +42,14 @@ src/
     BlogDetail.jsx
     Join.jsx
 
-  data/                  # Static content (blog posts, etc.)
-    posts.js
+  content/               # Static content as markdown files
+    blog/              # One .md file per blog post (auto-loaded)
+
+  data/                  # Data loaders
+    posts.js           # Auto-loads all .md files from content/blog/
+
+  lib/                   # Utility functions
+    parseFrontmatter.js  # Parses YAML frontmatter from markdown strings
 ```
 
 ## Conventions
@@ -78,12 +84,36 @@ Place it in `src/components/`. A shared component should:
 - Typography: use Tailwind defaults, keep it simple
 - All pages use `max-w-3xl` centered layout (handled by `PageContainer`)
 
-### Content / Data
+### Adding a blog post
 
-- Blog posts live in `src/data/posts.js` as an array of objects
-- Each post has: `slug`, `title`, `description`, `image`, `date`, `content`
-- `content` is a simple markdown string (supports `##`, `-` lists, numbered lists, paragraphs)
-- To add a new post, append to the array — no other changes needed
+1. Create a new `.md` file in `src/content/blog/` (filename becomes the URL slug)
+2. Add frontmatter at the top, then write content below:
+
+```md
+---
+title: Your Post Title
+description: A short one-liner for the listing page.
+image: https://images.unsplash.com/photo-xxx?w=800&h=400&fit=crop
+date: 2026-04-01
+---
+
+Your intro paragraph here.
+
+## A Section Heading
+
+More text here.
+```
+
+3. That's it — no code changes needed. `posts.js` auto-discovers all `.md` files via `import.meta.glob`
+
+Supported markdown: paragraphs, `## headings`, `- bulleted lists`, `1. numbered lists`
+
+### Content architecture
+
+- Blog posts live as individual `.md` files in `src/content/blog/`
+- `src/data/posts.js` auto-loads them at build time using Vite's `import.meta.glob`
+- `src/lib/parseFrontmatter.js` handles frontmatter parsing (no external dependency)
+- Posts are sorted by `date` (newest first)
 
 ### External links
 
