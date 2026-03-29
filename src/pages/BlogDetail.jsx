@@ -33,7 +33,7 @@ export default function BlogDetail() {
       <img
         src={post.image}
         alt={post.title}
-        className="mb-8 h-56 w-full rounded-lg object-cover"
+        className="mb-8 w-full rounded-lg"
       />
       <h1 className="mb-2 text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
         {post.title}
