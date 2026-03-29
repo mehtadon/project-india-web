@@ -1,7 +1,7 @@
 ---
 title: The Politician Gives What You Ask For — Are You Asking Right?
 description: India's freebie culture isn't something done to us — it's something we built, one vote at a time. Here's why the fix starts at the ward level.
-image: https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&h=400&fit=crop
+image: /are_you_asking_right.png
 date: 2026-03-29
 ---
 
